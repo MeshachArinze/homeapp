@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="../bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+    
+</head>
+<body>
+    <header class="head">
+        <div class="head_name">i build a mobile responsive website</div>
+        <div class="tel">
+            <span>call:</span>
+            <input type="tel" name="number" value="+2349131083175" class="number">
+        </div>
+    </header>
+    <nav class="nav_box">
+        <!-- home -->
+        <div class="logo-name">
+            <img class="icon-home" src="../node_modules/bootstrap-icons/icons/house-door-fill.svg" alt="Home">
+            <span>Home</span>
+        </div>
+
+        <div class="icon">
+            <a href="#"><img src="../node_modules/bootstrap-icons/icons/search.svg" alt=""></a>
+            <a href="#" id="signup__btn"><img src="../node_modules/bootstrap-icons/icons/person.svg" alt=""></a>
+            <a href="#" id="cart"><img src="../node_modules/bootstrap-icons/icons/cart.svg" alt=""></a>
+        </div>
+
+        <!-- menu button-->
+        <div class="button" id="btn">
+            <img src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
+        </div>
+
+        <!-- nav -->
+        <div class="navbar-box" id="navbar-box">
+            <ul class="navbar-ul " id="nav-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- cart / login / search -->
+    </nav> 
+    <section class="home" id="home">
+        <div class="home__back">
+            <div class="background-name">
+                <h2>Our Room is <span>Affordable</span> and has alot of space</h2>
+                <p>we are ready to serve all our client and give them their desire choice. Home is ready to serve you</p>
+                <a href="#" class="a_link text-decoration-none fw-bold">Book Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--features -->
+    <section id="feature">
+        <div class="feature-id">
+            <div class="name_of_feature">
+                <h3>our <span>Features</span></h3>
+            </div>
+            <div class="feature_box">
+                <div class="feature-div">
+                    <img src="../room/product-2.jpeg" alt="room">
+                    <h3>Lobby</h3>
+                    <p>for your own comfort</p>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="feature-div">
+                    <img src="../room/product-3.jpeg" alt="room">
+                    <h3>Lobby</h3>
+                    <p>for your own comfort</p>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="feature-div">
+                    <img src="../room/product-4.jpeg" alt="room">
+                    <h3>Lobby</h3>
+                    <p>for your own comfort</p>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="feature-div">
+                    <img src="../room/product-4.jpeg" alt="room">
+                    <h3>Lobby</h3>
+                    <p>for your own comfort</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- shopping cart -->
+    <section class="cart container-fluid">
+      <div class="cart__append-div">
+        <div class="cart--table-heading">
+          <div class="ms-1 fs-3">Item</div>
+          <div class="fs-3">Price</div>
+          <div class="fs-3">Quantity</div>
+        </div>
+        <div class="cart__box row">
+          
+        </div>
+        <div class="cart__total mt-5 justify-content-center align-items-center">
+          <h3 class="total d-flex justify-content-center align-items-center">Total:
+              <span class="fs-3">$</span>
+              <span class="fs-3 me-3 updateCartTotal" id="cart__total">0.00</span>
+          </h3>
+        </div>
+        <div class="cart--check">
+          <a id="clear__cart" class="clear_cart text-decoration-none fw-bold text-center w-25 " href="#">clear cart</a>
+          <a class="purchase fw-bold text-decoration-none w-25 text-center " href="#">purchase</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+        <div class="about__me text-center">
+            <h2>we produce real furniture</h2>
+            <p>check the card</p>
+            <a href="#feature">view our work</a>
+        </div>
+        <div class="card_container">
+            <div class="card-carousel">
+              <div class="card" id="1">
+                <div class="image-container"></div>
+                <p class="fs-1">we are interested in satisfying our customer needs</p>
+              </div>
+              <div class="card" id="2">
+                <div class="image-container"></div>
+                <p class="fs-1">we are ready to give our customer what they want</p>
+              </div>
+              <div class="card" id="3">
+                <div class="image-container"></div>
+                <p class="fs-1">purchase our product and again</p>
+              </div>  
+              
+            </div>
+            <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+          </div>
+    </section>
+
+    <!-- product page-->
+    <section id="product">
+        <section class="product">
+            <div class="slider-container grabbing">
+                <div class="slide">
+                    <img class="slide_img" src="../room/product-1.jpeg"  alt="">
+                        <h2>parlour</h2>
+                        <h4>$199</h4>
+                        <span class="icon_star">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                        </span>
+                        <a href="#" class="btn">Add To Cart</a>
+                </div>
+                <div class="slide">
+                      <img class="slide_img" src="../room/product-2.jpeg"  alt="">
+                        <h2>parlour</h2>
+                        <h4>$199</h4>
+                        <span class="icon_star">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                        </span>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                <div class="slide">
+                    <img class="slide_img" src="../room/product-3.jpeg"  alt="">
+                        <h2>parlour</h2>
+                        <h4>$199</h4>
+                        <span class="icon_star">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                            <img src="../node_modules/bootstrap-icons/icons/star-fill.svg" alt="">
+                        </span>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+            </div>
+        </section>        
+    </section>
+    
+    <section class="container-fluid">
+        <div class="row">
+            <div class="container shop max-height">
+                <div class="shop-item">
+                    <span class="shop__item-name fw-bold">Bed</span>
+                    <img src="../room/product-1.jpeg" class="p-2 shop__img mb-3" alt="">
+                    <div class="shop__name-span mb-3">
+                        <span class="shop__item-price fw-bold">$20</span>
+                        <span class="shop__item-btn fw-bold  py-1" style="background: gold;">Add TO CART
+                        </span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop__item-name fw-bold">Bed</span>
+                    <img src="../room/product-2.jpeg" class="p-2 mb-3" alt="">
+                    <div class="shop__name-span mb-3">
+                        <span class="shop__item-price fw-bold ">$10</span>
+                        <span class="shop__item-btn fw-bold py-1" style="background: gold;">Add TO CART</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop__item-name fw-bold">Bed</span>
+                    <img src="../room/product-3.jpeg" class="p-2 mb-3" alt="">
+                    <div class="shop__name-span mb-3">
+                        <span class="shop__item-price fw-bold ">$50</span>
+                        <span class="shop__item-btn fw-bold py-1" style="background: gold;">Add TO CART</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop__item-name fw-bold">Bed</span>
+                    <img src="../room/product-4.jpeg" class="p-2 mb-3" alt="">
+                    <div class="shop__name-span mb-3">
+                        <span class="shop__item-price fw-bold ">$30</span>
+                        <span class="shop__item-btn fw-bold py-1" style="background: gold;">Add TO CART</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact form-->
+    <section id="contact">
+        <div class="contact-form">
+            <h2>simple contact form</h2>
+            <div class="form-page">
+                <div id="error_message">
+                    
+                </div>
+                <form action="" id="myform">
+                    <div class="yourName">
+                        <label for="name">first Name</label>
+                        <input type="text" name="username" placeholder="e.g, firstname" class="name">
+                    </div>
+                    <div class="emailName">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" placeholder="e.g, email@email.com"  class="email">
+                    </div>
+                    <div class="phoneName">
+                        <label for="number">Phone</label>
+                        <input type="text" name="telephone" placeholder="e.g, 09131083175"  class="number">
+                    </div>
+                    <div class="textArea">
+                        <textarea name="textarea" placeholder="e.g, i need a reply" class="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="submitForm">
+                        <button>Submit</button>
+                    </div>
+                  </form>
+               </div>
+            </div>
+            <div id="map"></div>
+        </section>
+
+        <section class="signup__box" id="signup__box">
+           <div class="form-container sign-up-container">
+                <form action="#" class="add" id="signup">
+                   <h1>Create Account</h1>
+                    <div class="social-container">
+                       <a href="#" class="social">
+                           <img src="../node_modules/bootstrap-icons/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="../node_modules/bootstrap-icons/icons/google.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="../node_modules/bootstrap-icons/icons/linkedin.svg" alt="">
+                        </a>
+                   </div>
+                   <span>or use your email for registration</span>
+                   <input type="text" name="username" placeholder="Name" autocomplete />
+                   <input type="email" name="email" placeholder="Email" autocomplete />
+                   <input type="password" name="password" placeholder="Password" autocomplete />
+                   <button>Sign Up</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form action="#" class="delete" id="signin">
+                   <h1>Sign In</h1>
+                    <div class="social-container">
+                       <a href="#" class="social">
+                           <img src="../node_modules/bootstrap-icons/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="../node_modules/bootstrap-icons/icons/google.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="../node_modules/bootstrap-icons/icons/linkedin.svg" alt="">
+                        </a>
+                   </div>
+                   <span>or use your account</span>
+                   <input type="email" name="email" placeholder="Email" autocomplete />
+                   <input type="password" name="password" placeholder="Password" autocomplete />
+                   <a href="#">Forgot your password</a>
+                   <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>
+                            To keep connected with us please login with your personal info
+                        </p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello Friend!</h1>
+                        <p>
+                            Enter your personal details and start journey with us
+                        </p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__div">
+                <ul class="footer__social">
+                    <li>
+                        <a href="#">linkedln</a>
+                        <img src="../node_modules/bootstrap-icons/icons/linkedin.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">facebook</a>
+                        <img src="../node_modules/bootstrap-icons/icons/facebook.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">instagram</a>
+                        <img src="../node_modules/bootstrap-icons/icons/instagram.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">twitter</a>
+                        <img src="../node_modules/bootstrap-icons/icons/twitter.svg" alt="">
+                    </li>
+                </ul>
+                <ul class="footer__language">
+                    <li>
+                        <a href="#">Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#">Firebase</a>
+                    </li>
+                    <li>
+                        <a href="#">Bootstrap</a>
+                    </li>
+                    <li>
+                        <a href="#">Scss</a>
+                    </li>
+                </ul>
+                <ul class="footer__company">
+                    <li>
+                        <a href="#">Microsoft</a>
+                        <img src="../node_modules/bootstrap-icons/icons/microsoft.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                        <img src="../node_modules/bootstrap-icons/icons/twitter.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">Google</a><img src="../node_modules/bootstrap-icons/icons/google.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">Apple</a>
+                        <img src="../node_modules/bootstrap-icons/icons/apple.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <span>
+                    Develop by Meshach with plain javascript and firebase
+                </span>
+            </div>
+        </footer>
+    
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>     -->
+    <script src="../app/app.js"></script>
+    <script src="../app/cart.js"></script>
+    <script src="../app/contact.js"></script>
+    <script src="../app/form.js"></script>
+    <script src="../app/slider.js"></script>
+    <script src="../dist/bundle.js"></script>
+
+    <script src="../loadGoogleMaps.js"></script>
+    
+    <script async>
+
+        window.onload = async function() {
+            loadGoogleMaps();
+        }
+
+        let marker;
+        function gmapController() {
+            
+            //the location of map
+            
+            let AsabaMap = new google.maps.Map(document.getElementById("map"), {
+                zoom:  10,
+                center: {lat: 6.2059, lng: 6.6959},
+            });
+
+            //The marker, positioned at Bonsaac
+            marker = new google.maps.Marker({
+                AsabaMap,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: { lat: 6.1829, lng: 6.7275}
+            });
+            marker.addListener("click", toggleBounce);
+            toggleBounce() 
+        };
+
+        function toggleBounce() {
+            if(marker.getAnimation() !== null) {
+                marker.setAnimation(null)
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+        }
+
+    </script>   
+</body>
+</html>

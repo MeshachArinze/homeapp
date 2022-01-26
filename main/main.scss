@@ -1,0 +1,41 @@
+@import "./abstracts/function";
+@import "./abstracts/mixins";
+@import "./abstracts/variable";
+
+@import "./base/about";
+@import "./base/base";
+@import "./base/cart";
+@import "./base/contact";
+@import "./base/feature";
+@import "./base/header";
+@import "./base/product";
+@import "./base/shop";
+@import "./base/sign-login";
+@import "./base/typography";
+
+@import "./footer/footer";
+
+@import "layout/nav";
+@import "./pages/home";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 459px) {
+
+}
+
+@media (min-width: 460px) and (max-width: 599px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+ 
+}
+
+

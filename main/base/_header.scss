@@ -1,0 +1,148 @@
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & .head_name {
+        color: $light-white;
+        font-family: $font-family;
+        font-size: $font-sm2;
+    }
+
+    & .tel {
+        display: inline-block;
+
+        span {
+            color: $light-white;
+            font-size: $font-sm2;
+        }
+
+        .number {
+            color: $light-white;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: $font-sm2;
+        }
+    }
+        
+}
+
+/* for xtra small device at 480px*/
+
+@media (max-width: 480px) {
+    header {
+        background: $dark-cyan;
+        height: 13vh;
+
+        & .head_name {
+            color: $dark-gold;
+            font-size: 1.5rem;
+            transform: translateY(1rem);
+        }
+
+        & .tel {
+            transform: translateY(.5rem);
+            span {
+                color: $dark-blue;
+                font-size: 1.3rem;
+                font-weight: bolder;
+            }
+
+            .number {
+                font-size: 1.5rem;
+                color: $dark-gold;
+            }
+        }
+
+    }
+}
+
+/* for small device at 600px*/
+
+@media (min-width:481px) and (max-width:600px) {
+    header {
+        background: $dark-gold;
+        height: 13vh;
+
+        & .head_name {
+            color: $dark-black;
+            font-size: 1.9rem;
+            transform: translateY(.2rem);
+        }
+
+        
+        & .tel {
+            transform: translateY(-.7rem);
+            span {
+                color: $dark-blue;
+                font-size: 1.8rem;
+                font-weight: bolder;
+            }
+
+            .number {
+                font-size: 1.9rem;
+                color: $dark-black;
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    header {
+        background: $dark-black;
+        display: flex;
+        flex-direction: row;
+        height: 13.5vh;
+
+        & .head_name {
+            color: $dark-gold;
+            font-size: 2rem;
+        }
+
+        & .tel {
+            display: flex;
+            span {
+                color: $dark-cyan;
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+
+            .number {
+                font-size: 2rem;
+                color: $dark-gold;
+            }
+        }    
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        background: $dark-black;
+        display: flex;
+        flex-direction: row;
+        height: 13vh;
+
+        & .head_name {
+            color: $dark-gold;
+            font-size: 1.8rem;
+        }
+
+        & .tel {
+            span {
+                color: $dark-cyan;
+                font-size: 1.8rem;
+                font-weight: bolder;
+            }
+
+            .number {
+                font-size: 1.8rem;
+                color: $dark-gold;
+            }
+        }    
+    }
+}

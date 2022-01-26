@@ -1,0 +1,148 @@
+.home {
+    position: absolute;
+    top: .8rem;
+    width: 100%;
+    height: calc(100vh - 7%);
+    transform: translateY(6rem);
+    background-image: linear-gradient(to right bottom, 
+    rgba($dark-cyan, 0.8), 
+    rgba($dark-blue, 0.8)), 
+    url(/room/product-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__back {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        .background-name {
+            display: block;
+            max-width: 80%;
+
+            h2, p {
+                color: $dark-gold;
+                font-size: $font-lg2;
+                line-height: 2.5rem;
+                max-width: 80%;
+            }
+
+            .a_link {
+                &:link {
+                    background-color: $dark-cyan;
+                    padding: $font-sm2  $font-md1;
+                    color: $dark-gold;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px)  {
+    .home {
+        background-image: linear-gradient(to right bottom, 
+        rgba($dark-cyan, 0.8), 
+        rgba($dark-blue, 0.8)), 
+        url(/room/product-1.jpeg);
+        &__back {
+            .background-name {
+                h2, p {
+                    font-size: 1.5rem;
+                }
+
+                .a_link {
+                    font-size: 1rem;
+                    color: $dark-black;
+                    background: rgba($dark-gold, 0.8);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .home {
+        background-image: linear-gradient(to left top, 
+        rgba($dark-black, 0.8), 
+        rgba($dark-cyan, 0.8)), 
+        url(/room/product-2.jpeg);
+        &__back {
+
+            .background-name {
+                h2, p {
+                    font-size: 2.3rem;
+                    line-height: 1.6;
+                    letter-spacing: 4px;
+                }
+
+                .a_link {
+                    &:link {
+                        color: rgba($dark-gold, 0.8);
+                        background: rgba($dark-cyan, 0.8);
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .home {
+        background-image: linear-gradient(to left top, 
+        rgba($dark-black, 0.8), 
+        rgba($dark-blue, 0.8)), 
+        url(/room/product-3.jpeg);
+
+        &__back {
+
+            .background-name {
+                h2, p {
+                    font-size: 2.5rem;
+                    line-height: 1.6;
+                    letter-spacing: 4px;
+                }
+
+                .a_link {
+                    color: rgba($dark-gold, 0.8);
+                    background: rgba($dark-blue, 0.8);
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .home {
+        background-image: linear-gradient(to left top, 
+        rgba($dark-gold, 0.6), 
+        rgba($light-white, 0.6)), 
+        url(/room/product-4.jpeg);
+        background-size: cover;
+        height: 70vh;
+        position: relative;
+        transform: translateY(-5rem);
+        top: 0;
+
+        &__back {
+
+            .background-name {
+                h2, p {
+                    font-size: 1.7rem;
+                    line-height: 1.6;
+                    letter-spacing: 4px;
+                }
+
+                .a_link {
+                    color: rgba($dark-gold, 0.8);
+                    background: rgba($dark-blue, 0.8);
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

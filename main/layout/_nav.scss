@@ -1,0 +1,288 @@
+.nav_box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+
+    & .logo-name {
+        display: flex;
+        position: absolute;
+        top: 1.05rem;
+        margin-left: $font-md1;
+
+        img {
+            width: $font-lg2;
+        }
+
+        span {
+            color: $dark-gold;
+            font-size: $font-md1;
+        }
+    }
+
+    & .icon {
+        display: flex;
+        justify-content: center;
+        margin-top: .5rem;
+
+        a {
+            margin-right: $font-sm1;
+            background: $dark-gold;
+            padding: .2rem;
+        }
+    }
+
+    & .button {
+        display: flex;
+        align-self: end;
+        position: absolute;
+        top: $font-sm1;
+        margin-right: $font-md1;
+
+        img {
+            width: $font-lg2;
+        }
+    }
+
+    .navbar-box {
+        overflow: hidden;
+        width: 0;
+        transition: width 1s ease;
+        transform: translateX(-4rem);
+        position: relative;
+        
+
+        ul {
+            height: calc(100vh - 9rem);
+            background: $dark-cyan;
+            li {
+                border-bottom: 1px solid $dark-black;
+                list-style: none;
+                text-align: center;
+                transition: .8s;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a{
+                    color: $dark-gold;
+                    text-decoration: none;
+                    font-size: $font-lg2;
+                    margin-right: 2rem;
+                    &:hover{
+                        color: $dark-black;
+                        transition: .8s;
+                    }
+                }
+            }
+        }
+    }
+
+    .show {
+        width: 60%;
+        transition: width 1s ease;
+    }
+}
+/* for xtra small device*/
+
+@media (max-width: 480px) {
+
+    .nav_box {
+        transform: translateY(-.5rem);
+        & .logo-name {
+            img {
+                width: 2rem;
+            }
+            span {
+                font-size: $font-sm2;
+            }
+        }
+
+        & .icon {
+            margin-top: .5rem;
+            a {
+                padding: .1rem;
+            }
+        }
+
+        & .button {
+            width: 2rem;
+
+            img {
+                width: 2rem;
+                background: $dark-gold;
+            }
+        }
+        .navbar-box {
+            ul {
+                height: calc(100vh - 13rem);
+                li {
+                    padding: 2rem;
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }   
+    }
+
+    .show {
+        max-width: 60%;
+    }
+}
+
+/* for small device */
+@media (min-width: 481px) and (max-width: 600px) {
+    
+    .nav_box {
+        
+        & .logo-name {
+            img {
+                width: 2.9rem;
+            }
+            span {
+                font-size: 2.1rem;
+            }
+        }
+
+        & .icon {
+            margin-top: 1rem;
+            a {
+                padding: .3rem;
+            }
+        }
+
+        & .button {
+            margin-top: .5rem;
+
+            img {
+                width: 2.3rem;
+                background: $dark-gold;
+            }
+        }
+        .navbar-box {
+            ul {
+                height: calc(100vh - 13rem);
+                li {
+                    padding: 2rem;
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }   
+    }
+
+    .show {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .nav_box {
+        transform: translateY(-1.3rem);
+
+        & .logo-name {
+            img {
+                width: 3.3rem;
+            }
+            span {
+                font-size: 2.3rem;
+            }
+        }
+
+        & .icon {
+            margin-top: .8rem;
+            a {
+                padding: .6rem;
+            }
+        }
+
+        & .button {
+            margin-top: .3rem;
+
+            img {
+                width: 2.8rem;
+                background: $dark-gold;
+            }
+        }
+
+        .navbar-box {
+            ul {
+                height: calc(100vh - 10.3rem);
+                li {
+                    padding: 2.5rem;
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+
+        & .logo-name {
+            display: flex;
+            justify-self: flex-start;
+            position: relative;
+            transform: translateY(-1rem);
+            
+            img {
+                width: 2rem;
+            }
+            span {
+                font-size: 1.4rem;
+                transform: translateY(1.2rem);
+            }
+        }
+
+        & .icon {
+            width: inherit;
+            display: flex;
+            transform: translate(-10rem, -.5rem);
+            justify-content: flex-end;
+            a {
+                background: none;
+            }
+        }
+
+        & .button {
+            display: none;
+        }
+
+        .navbar-box {
+            width: 100%;
+            background: none;
+            overflow: visible;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            transform: translateX(.5rem);
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 0;
+                li {
+                    border-bottom: none;
+                    a {
+                        font-size: 1.5rem;
+                        color: $dark-black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}

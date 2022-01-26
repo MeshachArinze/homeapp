@@ -1,0 +1,212 @@
+.signup__box {
+    position: absolute;
+    top: 13rem;
+    z-index: 2;
+    width: 0;
+    max-width: 100%;
+    height: 370px;
+    max-height: 100%;
+    overflow: hidden;
+    background: $dark-cyan;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease-out;
+}
+
+.moveBtn {
+    width: 100%;
+    transition: width .8s ease-in;
+}
+
+.form-container form {
+    background: $light-white;
+    display: grid;
+    place-items: center;
+    padding: 0 30px;
+    height: 100%;
+    text-align: center;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a{
+    margin: 5px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background: $dark-gold;
+}
+
+.form-container input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $dark-gold;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    outline: none;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    background: $dark-black;
+    color: $dark-gold;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background: transparent;
+    border-color: $dark-black;
+}
+
+.form-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    transition: all .6s ease-in-out;
+}
+
+.sign-in-container {
+    width: 50%;
+    left: 0;
+    z-index: 2;
+}
+
+.sign-up-container {
+    width: 50%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.overlay-container {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    z-index: 100;
+    transition: transform .6s ease-in-out;
+}
+
+.overlay {
+    background: $dark-black;
+    background: linear-gradient(to right, $dark-black, $dark-gold) no-repeat 0 0 / cover;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    position: relative;
+    transform: translateX(0);
+    transition: transform .6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel p {
+    font-size: 1.5rem;
+    color: $light-white;
+}
+
+.overlay-panel #signUp {
+    background: $dark-black;
+}
+
+.overlay-panel #signIn {
+    background: $dark-gold;
+    color: $dark-black;
+}
+
+.overlay-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-left {
+    transform: translateX(-5%);
+}
+
+/* Animation */
+
+
+/* sign in */
+.signup__box.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+/* move overlay to left */
+.signup__box.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+/* bring sign in over sign up */
+.signup__box.signup__box.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* move overlay back to right */
+.signup__box.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.signup__box.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.signup__box.right-panel-active .overlay-left {
+    transform: translateX(5%);
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.35rem;
+    letter-spacing: .5px;
+    margin: 1.2rem 0 1.5rem;
+}
+
+a {
+    color: $dark-gold;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0.95rem 0;
+}

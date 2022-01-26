@@ -1,0 +1,123 @@
+.shop {
+    
+
+    .shop-item {
+        max-width: 100%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 1rem;
+        background: $dark-blue;
+
+        span {
+            text-align: center;
+        }
+
+        img {
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .shop__name-span {
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+
+            & :nth-child(1) {
+                color: $dark-gold;
+            }
+
+            & :nth-child(2) {
+                border-radius: 5px;
+                color: $dark-black;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .shop {
+        .shop-item {
+            .shop__item-name {
+                color: $dark-gold;
+            }
+ 
+            .shop__name-span {
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:481px) and (max-width: 600px) {
+    .shop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background: $dark-black;
+
+        .shop-item {
+            background: none;
+            .shop__item-name {
+                color: $dark-gold;
+                font-size: 2.3rem;
+            }
+            .shop__name-span {
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:601px) and (max-width: 768px) {
+    .shop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background: $dark-black;
+
+        .shop-item {
+            background: none;
+            .shop__item-name {
+                color: $dark-gold;
+                font-size: 2.7rem;
+            }
+            .shop__name-span {
+                span {
+                    font-size: 1.75rem;
+                }
+            }
+            &:nth-child(4) {
+                grid-column: 2 / 3;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .shop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+
+        .shop-item {
+            .shop__item-name {
+                font-size: 2rem;
+                color: $dark-gold;
+                letter-spacing: 3px;
+            }
+
+            .shop__name-span {
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

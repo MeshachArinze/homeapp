@@ -1,0 +1,90 @@
+/* smaller */
+/* small font-size */
+/* medium font-size */
+/* large font-size */
+/* width */
+.nav_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.nav_box .logo-name {
+  display: flex;
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 1.55rem;
+  display: flex;
+}
+
+.nav_box .logo-name img {
+  width: 2.41rem;
+}
+
+.nav_box .logo-name span {
+  color: #ffda0b;
+  font-size: 1.55rem;
+}
+
+.nav_box .icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.357rem;
+}
+
+.nav_box .icon a {
+  margin-right: 1.135rem;
+  background: #ffda0b;
+  padding: .5rem;
+}
+
+.nav_box .button {
+  display: flex;
+  align-self: end;
+  position: absolute;
+  top: 1.55rem;
+  margin-right: 1.55rem;
+}
+
+.nav_box .button img {
+  width: 2.41rem;
+}
+
+.nav_box .navbar-box {
+  overflow: hidden;
+  width: 0;
+  transition: width 1s ease;
+  transform: translateX(-4rem);
+}
+
+.nav_box .navbar-box ul {
+  height: 100vh;
+  background: #144f4f;
+  padding: 0;
+}
+
+.nav_box .navbar-box ul li {
+  list-style: none;
+  margin-bottom: 2.41rem;
+  text-align: center;
+  transition: .8s;
+}
+
+.nav_box .navbar-box ul li a {
+  color: #ffda0b;
+  border-radius: 2.41rem;
+  text-decoration: none;
+  font-size: 2.41rem;
+}
+
+.nav_box .navbar-box ul li a:hover {
+  color: #272727;
+  transition: .8s;
+}
+
+.nav_box .show {
+  width: 70%;
+  transition: width 1s ease;
+}
+/*# sourceMappingURL=nav.min.css.map */
