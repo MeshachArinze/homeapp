@@ -7,7 +7,7 @@
     background-image: linear-gradient(to right bottom, 
     rgba($dark-cyan, 0.8), 
     rgba($dark-blue, 0.8)), 
-    url(/room/product-1.jpeg);
+    url(./room/product-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -46,7 +46,7 @@
         background-image: linear-gradient(to right bottom, 
         rgba($dark-cyan, 0.8), 
         rgba($dark-blue, 0.8)), 
-        url(/room/product-1.jpeg);
+        url(./room/product-1.jpeg);
         &__back {
             .background-name {
                 h2, p {
@@ -68,7 +68,7 @@
         background-image: linear-gradient(to left top, 
         rgba($dark-black, 0.8), 
         rgba($dark-cyan, 0.8)), 
-        url(/room/product-2.jpeg);
+        url(./room/product-2.jpeg);
         &__back {
 
             .background-name {
@@ -95,7 +95,7 @@
         background-image: linear-gradient(to left top, 
         rgba($dark-black, 0.8), 
         rgba($dark-blue, 0.8)), 
-        url(/room/product-3.jpeg);
+        url(./room/product-3.jpeg);
 
         &__back {
 
@@ -121,7 +121,7 @@
         background-image: linear-gradient(to left top, 
         rgba($dark-gold, 0.6), 
         rgba($light-white, 0.6)), 
-        url(/room/product-4.jpeg);
+        url(./room/product-4.jpeg);
         background-size: cover;
         height: 70vh;
         position: relative;
