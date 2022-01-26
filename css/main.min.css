@@ -61,15 +61,15 @@
 }
 
 #about .card_container .card-carousel .card:nth-of-type(1) .image-container {
-  background-image: url("/room/product-1.jpeg");
+  background-image: url("room/product-1.jpeg");
 }
 
 #about .card_container .card-carousel .card:nth-of-type(2) .image-container {
-  background-image: url("/room/product-2.jpeg");
+  background-image: url("room/product-2.jpeg");
 }
 
 #about .card_container .card-carousel .card:nth-of-type(3) .image-container {
-  background-image: url("/room/product-3.jpeg");
+  background-image: url("room/product-3.jpeg");
 }
 
 #about .card_container .card-carousel .image-container {
@@ -1420,7 +1420,7 @@ a {
   width: 100%;
   height: calc(100vh - 7%);
   transform: translateY(6rem);
-  background-image: linear-gradient(to right bottom, rgba(20, 79, 79, 0.8), rgba(7, 7, 82, 0.8)), url(/room/product-1.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(20, 79, 79, 0.8), rgba(7, 7, 82, 0.8)), url(room/product-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1453,7 +1453,7 @@ a {
 
 @media (max-width: 480px) {
   .home {
-    background-image: linear-gradient(to right bottom, rgba(20, 79, 79, 0.8), rgba(7, 7, 82, 0.8)), url(/room/product-2.jpeg);
+    background-image: linear-gradient(to right bottom, rgba(20, 79, 79, 0.8), rgba(7, 7, 82, 0.8)), url(room/product-2.jpeg);
   }
   .home__back .background-name h2, .home__back .background-name p {
     font-size: 1.5rem;
@@ -1467,7 +1467,7 @@ a {
 
 @media (min-width: 481px) and (max-width: 600px) {
   .home {
-    background-image: linear-gradient(to left top, rgba(39, 39, 39, 0.8), rgba(20, 79, 79, 0.8)), url(/room/product-3.jpeg);
+    background-image: linear-gradient(to left top, rgba(39, 39, 39, 0.8), rgba(20, 79, 79, 0.8)), url(room/product-3.jpeg);
   }
   .home__back .background-name h2, .home__back .background-name p {
     font-size: 2.3rem;
@@ -1483,7 +1483,7 @@ a {
 
 @media (min-width: 601px) and (max-width: 768px) {
   .home {
-    background-image: linear-gradient(to left top, rgba(39, 39, 39, 0.8), rgba(7, 7, 82, 0.8)), url(/room/product-4.jpeg);
+    background-image: linear-gradient(to left top, rgba(39, 39, 39, 0.8), rgba(7, 7, 82, 0.8)), url(room/product-4.jpeg);
   }
   .home__back .background-name h2, .home__back .background-name p {
     font-size: 2.5rem;
@@ -1498,7 +1498,7 @@ a {
 
 @media screen and (min-width: 769px) {
   .home {
-    background-image: linear-gradient(to left top, rgba(255, 218, 11, 0.6), rgba(247, 247, 247, 0.6)), url(/room/product-6.jpeg);
+    background-image: linear-gradient(to left top, rgba(255, 218, 11, 0.6), rgba(247, 247, 247, 0.6)), url(room/product-6.jpeg);
     background-size: cover;
     height: 70vh;
     position: relative;
